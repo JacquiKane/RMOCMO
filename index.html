@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gameon.css">
+    <script type="text/javascript" src="gameon.js"></script>
+    <title>Traversing 2D Arrays</title>
+    <style>
+        .eyeson {
+            width: 30px;
+            height: 40px;
+        }
+        
+        .backing {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .boldface {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: larger;
+        }
+        
+        .topicFace {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: large;
+        }
+        
+        .formattedPara {
+            padding: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="boldface">Let's Have Some Order! ... In A 2D Array</h2>
+        <p>2D arrays are represented in terms of rows and columns. 2D arrays can be read in different ways, like across rows, up or down columns.
+            <span class="topicFace">Row-major</span> order refers to the ordering of elements in a 2D array, where traversal occurs across each row.
+            <span class="topicFace">Column-major</span> order refers to traversal down each column. There are performance differences between row-major order and column-major order, related to how the 2D array is organized, but these differences are outside
+            the scope of this course.
+        </p>
+        <div class="row row-cols-3 row-cols-s-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-3">
+
+            <div id="card1" class="col">
+                <h4>Row Major Order</h4>
+                <section class="card mb-5" id="rowmajor">
+                    <img id="playersRM" class="img-fluid backing" src="images\2dplayers.png">
+                    <img class="eyeson" id="eyesRM" src="images\eyes.png" alt="Eyes See You Row Major" />
+                </section>
+            </div>
+
+            <div id="card2" class="col">
+                <h4>Representation</h4>
+                <section class="card mb-5" id="representation">
+                    <img id="rowcolmaj" class="img-fluid backing" src="images\rowcolmajor.png">
+                    <p class="formattedPara">Representing the numbers from 1 through 25 in a 2D array can be done using <i>Row Major</i> order or <i>Column Major</i> order. It's necessary to be aware of the form when traversing a 2D array filled with elements for processing or
+                        just viewing.</p>
+                </section>
+            </div>
+
+
+            <div id="card3" class="col">
+                <h4>Column Major Order</h4>
+                <section class="card mb-5" id="colmajor">
+                    <img id="playersCM" class="img-fluid backing" src="images\2dplayers.png">
+                    <img class="eyeson" id="eyesCM" src="images\eyes.png" alt="eyes see you column-major" />
+                </section>
+            </div>
+        </div>
+        <!-- Row -->
+    </div>
+    <!-- Container -->
+
+</body>
+
+</html>
